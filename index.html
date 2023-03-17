@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/be0c4b5924.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js"></script>
+    <title>News-Today</title>
+</head>
+<body>
+        <header class="header  top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+            <!-- logo -->
+            <h1 class="w-3/12">
+                <a href="">
+                  <span class="nav bg-cyan-400 p-2 font-bold text-xl  border-green-500 border-opacity-0 text-white rounded cursor-pointer text-lg ">News</span><span class="font-bold text-xl text-sky-700 hover:text-green-700">Daily</span>
+                </a>
+            </h1>
+        
+            <!-- navigation -->
+            <nav class="nav font-semibold text-lg">
+                <ul class="flex items-center">
+                    <li class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+                      <a href="#">News</a>
+                    </li>
+                    <li class="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                      <a href="#" >Blog</a>
+                    </li>
+                   
+                </ul>
+            </nav>
+        
+            
+    </header>
+
+    <section class="container  p-12 ">
+        <div>
+            <ul class="flex justify-between">
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer ">
+                    <button onclick="loadNews('08')">Home</button>
+                    <!-- <a href="" id="home">Home</a> -->
+                    
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('01')">Breaking News</button>
+                    <!-- <a href="">Breaking News</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('02')">Regular News</button>
+                    <!-- <a href="">Regular News</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('03')">International News</button>
+                    <!-- <a href="">International News</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('04')">Sports</button>
+                    <!-- <a href="">Sports</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('05')">Intertainment</button>
+                    <!-- <a href="">Intertainment</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('03')">Culture</button>
+                    <!-- <a href="">Culture</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('07')">Arts</button>
+                    <!-- <a href="">Arts</a> -->
+                <li class="font-semibold border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
+                    <button onclick="loadNews('08')">All News</button>
+                    <!-- <a href="">All News</a> -->
+                <!-- <li class= "font-semibold hover:text-green-500  hover:bg-cyan-400 " >Home</li>
+                <li class=" font-semibold ">Breaking News</li>
+                <li class=" font-semibold ">Regular News</li>
+                <li class=" font-semibold ">International News</li>
+                <li class=" font-semibold ">Sports</li>
+                <li class=" font-semibold ">Intertainment</li>
+                <li class="font-semibold ">Culture</li>
+                <li class="font-semibold ">Arts</li>
+                <li class="font-semibold ">All News</li> -->
+            </ul>
+        </div>
+    </section>
+
+    <div id="details-container">
+
+    </div>
+        <div id="news-container" class="mx-20 gap-4">
+            
+        </div>
+        
+    </section>
+    <!-- Modal -->
+    <section>
+
+<div class="modal-container" id="modal-opened">
+  <div class="modal">
+
+    <div class="modal__details">
+      <h1 class="modal__title" id="modal_title">Modal Title</h1>
+      <!-- <p class="modal__description" id="modal_des"></p> -->
+    </div>
+
+    <p class="modal__text" id="modal_text"></p>
+
+    <!-- <button class="modal__btn">Button &rarr;</button> -->
+
+    <a href="#modal-closed" class="link-2"></a>
+
+  </div>
+</div>
+
+
+
+
+    </section>
+    </body>
+</html>
