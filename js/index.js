@@ -77,7 +77,7 @@ const showDetails = details =>{
         modalTitle.innerText = detail.title;
         const modalText = document.getElementById('modal_text');
         modalText.innerHTML = `
-        <p>${detail.details}</p>
+        <p>${detail.details.slice(0, 500)}</p>
         <br><br>
         <div class="flex items-center ">
                     <img class="w-10 h-10 rounded-full mr-4" src="${detail.author.img
